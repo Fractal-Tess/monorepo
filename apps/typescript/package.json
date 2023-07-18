@@ -1,0 +1,21 @@
+{
+  "name": "@ps/typescript",
+  "version": "0.1.0",
+  "description": "A starter typescript template",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -e ts",
+    "build": "tsup"
+  },
+  "author": "Fractal-Tess",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.4.2",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "zod": "^3.21.4"
+  }
+}
