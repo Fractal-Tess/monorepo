@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0"
+  }
+}
