@@ -1,0 +1,29 @@
+{
+  "name": "ui-svelte",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "types": "index.ts",
+  "type": "module",
+  "author": "Fractal-Tess",
+  "license": "MIT",
+  "scripts": {
+    "generate:component": "turbo gen svelte-component",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --plugin-search-dir=../../ --ignore-path=../../.prettierignore --write .",
+    "lint": "concurrently -c \"blue,red\" --names \"eslint,svelte-check\" \"eslint --ignore-path=../../.eslintignore .\" \"pnpm:check\""
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@ps/tailwind": "workspace:*",
+    "@ps/tsconfig": "workspace:^",
+    "concurrently": "^7.6.0",
+    "svelte": "^3.55.1",
+    "svelte-check": "^3.0.4",
+    "svelte-fa": "^3.0.3",
+    "tailwindest": "^1.0.4"
+  }
+}
