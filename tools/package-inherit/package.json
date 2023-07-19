@@ -1,0 +1,33 @@
+{
+  "name": "package-inherit",
+  "version": "0.1.0",
+  "main": "dist/package-inherit-cli.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "start": "rollup -c -w",
+    "release": "yarn build && yarn publish"
+  },
+  "dependencies": {
+    "beachball": "^1.32.2",
+    "detect-newline": "^3.1.0",
+    "package-inherit": "link:",
+    "parse-package-name": "^0.1.0",
+    "tslib": "^2.0.1",
+    "workspace-tools": "^0.9.6",
+    "yargs-parser": "^19.0.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "@tsconfig/node12": "^1.0.7",
+    "@types/node": "^14.6.2",
+    "cross-env": "^7.0.2",
+    "rollup": "^2.26.8",
+    "rollup-plugin-external-globals": "^0.6.0",
+    "rollup-plugin-node-externals": "^2.2.0",
+    "rollup-plugin-progress": "^1.1.2",
+    "typescript": "^4.0.2"
+  }
+}
