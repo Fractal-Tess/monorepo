@@ -1,0 +1,26 @@
+{
+  "name": "@ps/tailwind",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "license": "MIT",
+  "author": "Fractal-Tess",
+  "exports": {
+    ".": "./tailwind.config.cjs",
+    "./postcss": "./postcss.config.cjs",
+    "./styles": "./styles.postcss"
+  },
+  "inherits": [
+    "@ps/dependencies/ui/tailwind.json",
+    "@ps/dependencies/ui/fonts.json"
+  ],
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "0.4.4",
+    "daisyui": "3.2.1",
+    "postcss": "8.4.26",
+    "tailwindcss": "3.3.3",
+    "@fontsource/roboto": "5.0.5",
+    "tailwindcss-hero-patterns": "0.1.2",
+    "tailwindcss-gradients": "3.0.0",
+    "tailwindest": "2.1.1"
+  }
+}
