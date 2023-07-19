@@ -1,15 +1,44 @@
 {
   "name": "poly-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "author": "Fractal-Tess",
+  "description": "Poly-Starter is a monorepo startup template combining a wide range of 'cool' technology solutions to modern-day problem",
+  "repository": {
+    "url": "https://github.com/Fractal-Tess/poly-starter",
+    "type": "git",
+    "directory": "/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "template",
+    "monorepo",
+    "startup-up template",
+    "svelte",
+    "sveltekit",
+    "tailwindcss"
+  ],
+  "scripts": {
+    "test": "turbo run dev",
+    "postinstall": "husky install",
+    "preinstall": "node ./tools/package-inherit/dist/package-inherit-cli.js update"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --ignore-path=./.eslintignore",
+      "prettier --write --plugin-search-dir=. --ignore-path=./.prettierignore"
+    ]
+  },
   "devDependencies": {
-    "turbo": "^1.10.7"
+    "@changesets/cli": "^2.26.2",
+    "@turbo/gen": "^1.10.9",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "turbo": "^1.10.9"
+  },
+  "engineStrict": true,
+  "engines": {
+    "pnpm": ">7.0.0",
+    "node": ">18.0.0 <19.0.0"
   }
 }
