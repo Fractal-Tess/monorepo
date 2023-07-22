@@ -36,12 +36,21 @@ importers:
       '@tailwindcss/line-clamp':
         specifier: 0.4.4
         version: 0.4.4(tailwindcss@3.3.3)
+      '@types/node':
+        specifier: 20.4.2
+        version: 20.4.2
+      '@types/react':
+        specifier: 18.2.15
+        version: 18.2.15
+      '@types/react-dom':
+        specifier: 18.2.7
+        version: 18.2.7
       autoprefixer:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.26)
       daisyui:
-        specifier: 3.2.1
-        version: 3.2.1
+        specifier: 3.3.1
+        version: 3.3.1
       next:
         specifier: 13.4.10
         version: 13.4.10(react-dom@18.2.0)(react@18.2.0)
@@ -133,6 +142,9 @@ importers:
       '@tsconfig/svelte':
         specifier: 5.0.0
         version: 5.0.0
+      '@types/node':
+        specifier: 20.4.2
+        version: 20.4.2
       svelte:
         specifier: 4.1.0
         version: 4.1.0
@@ -197,8 +209,8 @@ importers:
         specifier: ^10.4.14
         version: 10.4.14(postcss@8.4.23)
       daisyui:
-        specifier: ^2.51.6
-        version: 2.51.6(autoprefixer@10.4.14)(postcss@8.4.23)
+        specifier: ^3.3.1
+        version: 3.3.1
       eslint:
         specifier: ^8.40.0
         version: 8.40.0
@@ -293,8 +305,6 @@ importers:
         specifier: ^3.21.4
         version: 3.21.4
 
-  packages/dependencies: {}
-
   packages/drizzle:
     dependencies:
       drizzle-orm:
@@ -320,8 +330,8 @@ importers:
         specifier: 0.4.4
         version: 0.4.4(tailwindcss@3.3.3)
       daisyui:
-        specifier: 3.2.1
-        version: 3.2.1
+        specifier: 3.3.1
+        version: 3.3.1
       postcss:
         specifier: 8.4.26
         version: 8.4.26
@@ -2855,14 +2865,6 @@ packages:
       color-string: 1.9.1
     dev: true
 
-  /color@4.2.3:
-    resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==}
-    engines: {node: '>=12.5.0'}
-    dependencies:
-      color-convert: 2.0.1
-      color-string: 1.9.1
-    dev: true
-
   /colord@2.9.3:
     resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==}
     dev: true
@@ -3009,24 +3011,8 @@ packages:
       type: 1.2.0
     dev: true
 
-  /daisyui@2.51.6(autoprefixer@10.4.14)(postcss@8.4.23):
-    resolution: {integrity: sha512-JRqOKayuFCmWe4X4k6Qvx1y7V/VNao8U5eTSOhusOKIzCsYqf56+TCSe4d7zmqGE0V6JiLDYAT8JeoWUeRKFCw==}
-    peerDependencies:
-      autoprefixer: ^10.0.2
-      postcss: ^8.1.6
-    dependencies:
-      autoprefixer: 10.4.14(postcss@8.4.23)
-      color: 4.2.3
-      css-selector-tokenizer: 0.8.0
-      postcss: 8.4.23
-      postcss-js: 4.0.1(postcss@8.4.23)
-      tailwindcss: 3.3.3
-    transitivePeerDependencies:
-      - ts-node
-    dev: true
-
-  /daisyui@3.2.1:
-    resolution: {integrity: sha512-gIqE6wiqoJt9G8+n3R/SwLeUnpNCE2eDhT73rP0yZYVaM7o6zVcakBH3aEW5RGpx3UkonPiLuvcgxRcb2lE8TA==}
+  /daisyui@3.3.1:
+    resolution: {integrity: sha512-0PVNl+0r2Ie+FRkDNQABYcv8qLc0bt0lhUfSf8PxGocqpDsCB6cNQ5k8jOlnZIjUhc1EXMIDPU9r0pVrfRGftw==}
     engines: {node: '>=16.9.0'}
     dependencies:
       colord: 2.9.3
@@ -5837,16 +5823,6 @@ packages:
     dependencies:
       camelcase-css: 2.0.1
       postcss: 7.0.39
-    dev: true
-
-  /postcss-js@4.0.1(postcss@8.4.23):
-    resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
-    engines: {node: ^12 || ^14 || >= 16}
-    peerDependencies:
-      postcss: ^8.4.21
-    dependencies:
-      camelcase-css: 2.0.1
-      postcss: 8.4.23
     dev: true
 
   /postcss-js@4.0.1(postcss@8.4.26):
