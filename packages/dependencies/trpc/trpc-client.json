@@ -1,5 +1,0 @@
-{
-  "devDependencies": {
-    "@trpc/client": "10.34.0"
-  }
-}

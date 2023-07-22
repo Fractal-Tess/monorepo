@@ -9,10 +9,6 @@
     "./postcss": "./postcss.config.cjs",
     "./styles": "./styles.postcss"
   },
-  "inherits": [
-    "@ps/dependencies/ui/tailwind.json",
-    "@ps/dependencies/ui/fonts.json"
-  ],
   "devDependencies": {
     "@tailwindcss/line-clamp": "0.4.4",
     "daisyui": "3.2.1",

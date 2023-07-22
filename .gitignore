@@ -4,3 +4,8 @@ build
 dist
 target
 *.log
+
+
+# Meta frameworks
+.next
+.sveltekit

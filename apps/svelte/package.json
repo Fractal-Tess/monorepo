@@ -9,14 +9,6 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
-  "inherits": [
-    "@ps/dependencies/tools/typescript.json",
-    "@ps/dependencies/svelte/svelte.json",
-    "@ps/dependencies/svelte/vite-svelte.json",
-    "@ps/dependencies/svelte/svelte-spa.json",
-    "@ps/dependencies/ui/icons.json",
-    "@ps/dependencies/ui/svelte-fa.json"
-  ],
   "devDependencies": {
     "@ps/tailwind": "workspace:*",
     "@sveltejs/vite-plugin-svelte": "2.4.2",
@@ -30,6 +22,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
-    "svelte-fa": "3.0.4"
+    "svelte-fa": "3.0.4",
+    "@types/node": "20.4.2"
   }
 }
