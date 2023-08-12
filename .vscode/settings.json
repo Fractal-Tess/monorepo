@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "cache/": true,
+    "**/.turbo": true
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "rust-analyzer.linkedProjects": ["./apps/tauri/src-tauri/Cargo.toml"]
+}
