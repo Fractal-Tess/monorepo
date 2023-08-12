@@ -4,13 +4,16 @@
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
     "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "jsx": "react-jsx",
+    "noEmit": true,
+
     "skipLibCheck": true,
-    "composite": true,
+    "allowSyntheticDefaultImports": true,
+
     "strict": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true
   },
   "include": ["."],
   "exclude": ["node_modules"]
