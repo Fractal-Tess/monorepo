@@ -20,8 +20,7 @@
   ],
   "scripts": {
     "test": "turbo run dev",
-    "postinstall": "husky install",
-    "preinstall": "node ./tools/package-inherit/dist/package-inherit-cli.js update"
+    "postinstall": "husky install"
   },
   "lint-staged": {
     "*.ts": [
