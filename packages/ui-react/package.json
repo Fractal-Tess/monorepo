@@ -2,12 +2,25 @@
   "name": "@ps/ui-react",
   "license": "MIT",
   "version": "0.1.0",
-  "types": "./index.tsx",
-  "main": "./index.tsx",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.tsx",
+      "import": "./index.tsx"
+    },
+    "./components": {
+      "types": "./components/ui/*.{tsx,ts}",
+      "import": "./components/ui/*.{tsx,ts}"
+    },
+    "./utils": {
+      "import": "./utils.ts",
+      "types": "./utils.ts"
+    }
+  },
   "scripts": {
     "ui:add": "pnpm dlx shadcn-ui@latest add",
-    "postui:add": "ts-node --esm ./scripts/generateIndex.mts"
+    "postui:add": "ts-node --esm ./scripts/generateIndex.mts",
+    "lint": "tsc"
   },
   "devDependencies": {
     "@ps/tailwind": "workspace:*",
