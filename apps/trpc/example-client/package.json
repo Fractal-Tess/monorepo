@@ -1,0 +1,17 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch ./src/main.ts",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@trpc/client": "^10.37.1",
+    "@types/node": "^20.5.0",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "zod": "^3.21.4"
+  }
+}
