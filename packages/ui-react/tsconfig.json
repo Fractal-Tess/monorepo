@@ -1,6 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
     "module": "ESNext",
@@ -15,6 +13,6 @@
     "noUncheckedIndexedAccess": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["."],
+  "include": ["./**/*.{ts,tsx}"],
   "exclude": ["node_modules"]
 }
