@@ -19,7 +19,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@ps/tailwind": "workspace:*",
-    "@ps/tsconfig": "workspace:^",
     "clsx": "^2.0.0",
     "concurrently": "^7.6.0",
     "shadcn-svelte": "^0.1.2",
@@ -29,7 +28,6 @@
     "tailwind-merge": "^1.14.0",
     "tailwindest": "^1.0.4",
     "class-variance-authority": "^0.7.0",
-    "lucide-svelte": "^0.263.0",
-    "tailwindcss-animate": "^1.0.6"
+    "lucide-svelte": "^0.263.0"
   }
 }
