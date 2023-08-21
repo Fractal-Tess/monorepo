@@ -11,18 +11,18 @@
   },
   "devDependencies": {
     "@ps/tailwind": "workspace:*",
-    "@sveltejs/vite-plugin-svelte": "2.4.2",
+    "@sveltejs/vite-plugin-svelte": "2.4.5",
     "@tsconfig/svelte": "5.0.0",
-    "svelte": "4.1.0",
-    "svelte-check": "3.4.6",
-    "vite": "4.4.0",
+    "svelte": "4.2.0",
+    "svelte-check": "3.5.0",
+    "vite": "4.4.9",
     "typescript": "5.1.6",
-    "tslib": "2.6.0",
+    "tslib": "2.6.2",
     "svelte-spa-router": "3.3.0",
-    "@fortawesome/free-brands-svg-icons": "^6.3.0",
-    "@fortawesome/free-regular-svg-icons": "^6.3.0",
-    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "svelte-fa": "3.0.4",
-    "@types/node": "20.4.2"
+    "@types/node": "20.5.1"
   }
 }
