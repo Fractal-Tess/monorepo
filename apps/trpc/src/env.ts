@@ -1,4 +1,4 @@
-import z, { object } from 'zod';
+import z from 'zod';
 import { config } from 'dotenv';
 
 config({ override: true });
