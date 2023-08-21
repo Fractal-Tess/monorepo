@@ -9,26 +9,8 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "baseUrl": ".",
-    "paths": {
-      "$lib": ["src/lib"],
-      "$lib/*": ["src/lib/*"],
-
-      "$styles": ["src/app.postcss"],
-
-      "$layout": ["src/lib/layout"],
-      "$layout/*": ["src/lib/layout/*"],
-
-      "$stores": ["src/lib/stor2es"],
-      "$stores/*": ["src/lib/stores/*"],
-
-      "$components": ["src/lib/components"],
-      "$components/*": ["src/lib/components/*"],
-
-      "$data": ["src/lib/data"],
-      "$data/*": ["src/lib/data/*"],
-
-      "$types": ["src/types.ts"]
-    }
+    "allowSyntheticDefaultImports": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true
   }
 }

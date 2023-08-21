@@ -1,15 +1,12 @@
 <script lang="ts">
-  import ThemeToggle from '$components/theme/ThemeToggle.svelte';
+  import ThemeToggle from '$lib/components/theme/ThemeToggle.svelte';
   import { faGithub } from '@fortawesome/free-brands-svg-icons';
   import Fa from 'svelte-fa';
 </script>
 
 <div class="flex h-20 items-center justify-between px-4">
-  <a href="/" class="block h-full">
-    <img
-      src="/svelte.svg"
-      alt="svelte logo"
-      class="aspect-square h-full py-4" />
+  <a href="/">
+    <img src="/svelte.svg" alt="svelte logo" class="aspect-square h-12 w-12" />
   </a>
   <nav>
     <ul

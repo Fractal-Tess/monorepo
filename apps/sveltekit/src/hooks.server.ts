@@ -1,6 +1,6 @@
 import z from 'zod';
 import type { Handle } from '@sveltejs/kit';
-import type { Theme } from './types';
+import type { Theme } from './lib/types';
 
 const themeValidator = z.enum(['dark', 'light']);
 

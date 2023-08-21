@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '$styles';
+  import '@ps/tailwind/styles.postcss';
   import { env } from '$env/dynamic/public';
 
   import { theme } from '$lib/stores/theme';

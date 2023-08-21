@@ -1,9 +1,9 @@
 import { writable } from 'svelte/store';
-import type { Theme } from 'src/types';
+import type { Theme } from '$lib/types';
 import Cookie from 'js-cookie';
 import { browser } from '$app/environment';
 
-const ONE_YAR = 86400 * 1000 * 365; // 86400 seconds in a day, 1000 milliseconds to seconds, 365 days in a year
+const ONE_YAR = 86400 * 1000 * 365;
 
 export const createThemeStore = () => {
   const { subscribe, update, set } = writable<Theme | null>();
