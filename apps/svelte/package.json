@@ -23,6 +23,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "svelte-fa": "3.0.4",
-    "@types/node": "20.5.1"
+    "@types/node": "20.6.0"
   }
 }
