@@ -6,7 +6,7 @@
   "author": "Fractal-Tess",
   "devDependencies": {
     "@fontsource/roboto": "5.0.8",
-    "daisyui": "3.5.1",
+    "daisyui": "3.8.2",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.6",
     "tailwindcss-gradients": "3.0.0",
