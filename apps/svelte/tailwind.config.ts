@@ -1,4 +1,4 @@
-import config from '@ps/tailwind/tailwind.config.ts';
+import config from '@monorepo/tailwind/tailwind.config.ts';
 
 const override = {
   ...config,
