@@ -1,9 +1,15 @@
-/** @type {import('tailwindcss-hero-patterns/src/patterns')} */
-const heroPatterns = require('tailwindcss-hero-patterns');
-const defaultTheme = require('tailwindcss/defaultTheme');
+// Theming
+import defaultTheme from 'tailwindcss/defaultTheme';
+import defaultDaisyTheme from 'daisyui/src/theming/themes';
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+// Plugins
+import daisyui from 'daisyui';
+import twAnimate from 'tailwindcss-animate';
+import twHeroPatterns from 'tailwindcss-hero-patterns';
+
+import type { Config } from 'tailwindcss';
+
+const config = {
   darkMode: 'class',
   content: ['../../packages/ui/components/**/*.{ts,tsx}'],
 
@@ -18,25 +24,24 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['roboto', ...defaultTheme.fontFamily.sans]
-      },
-
-      heroPatternsOpacities: ['10'],
-      heroPatterns: {
-        topography:heroPatterns.topography
       }
+    },
+    heroPatternsOpacities: ['10'],
+    heroPatterns: {
+      topography: twHeroPatterns.config.theme.heroPatterns.topography
     }
   },
   daisyui: {
     themes: [
       {
         light: {
-          ...require('daisyui/src/theming/themes')['[data-theme=light]'],
+          ...defaultDaisyTheme['[data-theme=light]'],
           primary: '#45B1E8',
           secondary: '#fbbf24',
           error: '#ec223d'
         },
         dark: {
-          ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
+          ...defaultDaisyTheme['[data-theme=dark]'],
           primary: '#45B1E8',
           secondary: '#fbbf24',
           error: '#ec223d'
@@ -52,10 +57,7 @@ module.exports = {
     prefix: '', // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
     logs: true // Shows info about daisyUI version and used config in the console when building your CSS
   },
-  plugins: [
-    require('tailwindcss-animate'),
-    require('daisyui'),
-    require('tailwindcss-gradients'),
-    // require('tailwindcss-hero-patterns')
-  ]
-};
+  plugins: [daisyui, twAnimate, twHeroPatterns]
+} satisfies Config;
+
+export default config;
