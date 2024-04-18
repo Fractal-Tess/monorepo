@@ -1,6 +1,6 @@
 <script lang="ts">
   import { theme } from '$lib/stores/theme';
-  import Router from '$lib/router/Router.svelte';
+  import Router from './Router.svelte';
   import BaseLayout from '$lib/layout/BaseLayout.svelte';
 
   $: {

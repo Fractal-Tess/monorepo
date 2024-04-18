@@ -2,13 +2,12 @@ import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { join } from 'node:path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte()],
 
   resolve: {
     alias: {
-      $lib: join(__dirname, 'src/lib')
+      $lib: join(import.meta.dirname, 'src/lib')
     }
   },
 

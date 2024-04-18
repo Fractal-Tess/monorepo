@@ -1,5 +1,5 @@
 {
-  "name": "ui-svelte",
+  "name": "@monorepo/ui-svelte",
   "version": "0.1.0",
   "main": "index.ts",
   "module": "index.ts",
@@ -18,7 +18,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
-    "@ps/tailwind": "workspace:*",
+    "@monorepo/tailwind": "workspace:*",
     "clsx": "^2.0.0",
     "concurrently": "^7.6.0",
     "shadcn-svelte": "^0.1.2",

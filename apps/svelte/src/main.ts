@@ -1,4 +1,4 @@
-import '@ps/tailwind/styles';
+import '@ps/tailwind/styles.css';
 import App from './App.svelte';
 
 const target = document.getElementById('app');

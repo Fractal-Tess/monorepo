@@ -1,20 +1,17 @@
 <script lang="ts">
-  import ThemeToggleIcon from '$lib/components/buttons/ThemeToggleIcon.svelte';
-  import { theme } from '$lib/stores/theme';
-  import { faGithub } from '@fortawesome/free-brands-svg-icons';
+  import { ThemeToggle } from '@monorepo/ui-svelte';
   import Fa from 'svelte-fa';
+  import { faGithub } from '@fortawesome/free-brands-svg-icons';
   import { link } from 'svelte-spa-router';
+  import { theme } from '$lib/stores/theme';
+
+  // If not using tauri, you may go ahead and remove the data-tauri-drag-region attribute from the header tag
 </script>
 
 <header
   data-tauri-drag-region
   class="flex h-12 items-center justify-between bg-base-100 px-2 shadow-lg">
-  <button
-    tabindex="-1"
-    on:click={theme.toggleTheme}
-    class="flex items-center hover:text-secondary">
-    <ThemeToggleIcon theme={$theme} />
-  </button>
+  <ThemeToggle currentTheme={$theme} onClick={theme.toggleTheme} class="h-8 " />
 
   <nav>
     <ul class="flex space-x-4 text-xl font-bold">
