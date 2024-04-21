@@ -18,8 +18,18 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "$components": ["../../packages/ui-react/index.ts"],
+      "$utils": ["src/utils.ts"]
+    }
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "../../packages/ui-react/**/*.ts",
+    "../../packages/ui-react/**/*.tsx"
+  ],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

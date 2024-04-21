@@ -1,8 +1,3 @@
-// const config = require('@ps/tailwind/postcss.config.cjs')
+const config = require('@monorepo/ui-react/postcss.config')
 
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {}
-  }
-};
+module.exports = config
