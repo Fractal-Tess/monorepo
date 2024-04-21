@@ -1,4 +1,4 @@
-import '@monorepo/tailwind/styles.postcss';
+import '@monorepo/ui-svelte/styles';
 import App from './App.svelte';
 
 const target = document.getElementById('app');

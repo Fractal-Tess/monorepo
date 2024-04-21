@@ -7,7 +7,9 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      $lib: join(import.meta.dirname, 'src/lib')
+      $lib: join(import.meta.dirname, 'src/lib'),
+      $components:"@monorepo/ui-svelte/components", 
+      $utils: "@monorepo/ui-svelte/utils",
     }
   },
 

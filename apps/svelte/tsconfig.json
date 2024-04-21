@@ -36,7 +36,11 @@
 
     "baseUrl": ".",
     "paths": {
-      "$lib/*": ["src/lib/*"]
+      "$lib/*": ["src/lib/*"],
+      "$components": ["@monorepo/ui-svelte/components"],
+      "$components/*": ["@monorepo/ui-svelte/components/*"],
+      "$utils": ["@monorepo/ui-svelte/utils"],
+      "$utils/*": ["@monorepo/ui-svelte/utils/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],

@@ -1,5 +1,8 @@
 <script lang="ts">
-  import { ThemeToggle } from '@monorepo/ui-svelte';
+  //import { ThemeToggle } from '../../../../../packages/ui-svelte/src/lib/components/ui/theme';
+  // import { ThemeToggle } from '@monorepo/ui-svelte/lib/components/ui/theme/index';
+  // import { ThemeToggle } from '@monorepo/ui-svelte/components/ui/theme/index';
+  import { ThemeToggle } from '$components/theme/index';
   import Fa from 'svelte-fa';
   import { faGithub } from '@fortawesome/free-brands-svg-icons';
   import { link } from 'svelte-spa-router';

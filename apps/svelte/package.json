@@ -1,20 +1,18 @@
 {
   "name": "svelte",
-  "private": true,
   "version": "0.1.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@monorepo/tailwind": "workspace:*",
-    "@monorepo/ui-svelte":"workspace:*",
     "@sveltejs/vite-plugin-svelte": "3.1.0",
     "@tsconfig/svelte": "5.0.4",
     "@types/node": "20.12.7",

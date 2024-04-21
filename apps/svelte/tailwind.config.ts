@@ -1,12 +1,3 @@
-import config from '@monorepo/tailwind/tailwind.config.ts';
+import config from '@monorepo/ui-svelte/tailwind.config'
 
-const override = {
-  ...config,
-  content: [
-    'src/**/*.{html,svelte,ts,js}',
-    './index.html',
-    '../../packages/ui-svelte/**/*.{svelte,ts,js}'
-  ]
-};
-
-export default override;
+export default config;
