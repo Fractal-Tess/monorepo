@@ -1,18 +1,15 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "jsx": "react-jsx",
-    "noEmit": true,
-
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "verbatimModuleSyntax": true
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      // Used for shadcn path imports
+      "@ui-components": ["components/*"],
+      // Used for intellisense
+      "@ui-components/*": ["components/*"],
+      "@ui-utils": ["utils.ts"]
+    }
   },
-  "include": ["./**/*.{ts,tsx}"],
+  "include": ["utils.ts", "components"],
   "exclude": ["node_modules"]
 }

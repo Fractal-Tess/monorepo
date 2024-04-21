@@ -2,12 +2,13 @@
   "name": "@monorepo/ui-react",
   "version": "0.1.0",
   "private": true,
+  "author": "Fractal-Tess",
   "exports": {
-    "./styles": "./styles.css",
-    "./components/*": "./components/*.ts",
-    "./utils": "./utils.ts",
+    "./styles.css": "./styles.css",
     "./postcss.config": "./postcss.config.cjs",
-    "./tailwind.config": "./tailwind.config.ts"
+    "./tailwind.config": "./tailwind.config.ts",
+    "./components": "./index.ts",
+    "./utils": "./utils.ts"
   },
   "scripts": {
     "lint": "eslint .",
@@ -17,18 +18,18 @@
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "lucide-react": "^0.371.0",
-    "tailwind-merge": "^2.2.2",
-    "tailwind-variants": "^0.2.1",
+    "cmdk": "^1.0.0",
+    "lucide-react": "^0.314.0",
+    "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@monorepo/eslint-config": "workspace:*",
-    "@types/node": "^20.12.7",
-    "@types/react": "^18.2.79",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.5"
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   }
 }
