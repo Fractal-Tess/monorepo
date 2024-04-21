@@ -22,7 +22,8 @@
     "baseUrl": "./",
     "paths": {
       "$components": ["../../packages/ui-react/index.ts"],
-      "$utils": ["src/utils.ts"]
+      "$utils": ["src/utils.ts"],
+      "@ui-utils": ["../../packages/ui-react/utils.ts"]
     }
   },
   "include": [
