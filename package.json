@@ -1,22 +1,29 @@
 {
-  "name": "poly-starter",
+  "name": "monorepo",
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
   "author": "Fractal-Tess",
-  "description": "Poly-Starter is a monorepo startup template combining a wide range of 'cool' technology solutions to modern-day problem",
+  "description": "Monorepo is a turborepo monorepo starter template for setting up most of the initial configurations for a monorepo project. Any unused apps/packages can be deleted.",
   "repository": {
-    "url": "https://github.com/Fractal-Tess/poly-starter",
+    "url": "https://github.com/Fractal-Tess/monorepo",
     "type": "git",
     "directory": "/"
   },
   "keywords": [
     "template",
+    "starter",
     "monorepo",
-    "startup-up template",
+    "turborepo",
     "svelte",
     "sveltekit",
-    "tailwindcss"
+    "react",
+    "nextjs",
+    "tailwindcss",
+    "shadcn-ui",
+    "typescript",
+    "trpc",
+    "web-extension"
   ],
   "scripts": {
     "test": "turbo run dev",
